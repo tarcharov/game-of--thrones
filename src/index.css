@@ -1,7 +1,15 @@
 @font-face {
   font-family: "Game of Thrones KG";
-  src: local("Game of Thrones KG"), local("GameofThronesKG"),
-    url("/src/assets/fonts/GameofThronesKG.woff") format("woff");
+  src: local("Game of Thrones KG"),
+    url("/src/assets/fonts/GameofThronesKG.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inknut Antiqua";
+  src: local("Inknut Antiqua"),
+    url("/src/assets/fonts/InknutAntiqua-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
