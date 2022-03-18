@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  position: relative;
+  min-width: 650px;
+  min-height: 349px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  background-color: #333333;
+  border: 3px solid #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.container > p {
+  font-family: "Game of Thrones KG";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 20px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.container > img,
+.shadow_block {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  position: absolute;
+}
+.container > img {
+  transition: transform 300ms ease-in-out;
+}
+
+.container:hover > img {
+  transform: scale(1.2);
+}
+.shadow_block {
+  z-index: 1;
+  background: black;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.container:hover > .shadow_block {
+  opacity: 0.8;
+}

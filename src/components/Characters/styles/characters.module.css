@@ -1,0 +1,64 @@
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  background-color: #101010;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main > h1 {
+  position: relative;
+  width: 100%;
+  margin: 30px 0 30px 0;
+  font-family: "Game of Thrones KG";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.container {
+  background: #101010;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.container > div {
+  margin-right: 20px;
+}
+
+.main > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  width: 405px;
+  height: 105px;
+  background: linear-gradient(180deg, #242424 0%, #282828 100%);
+  border: 2px solid #009ce1;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4),
+    -4px -4px 12px rgba(255, 255, 255, 0.05), 4px 4px 12px rgba(0, 0, 0, 0.4),
+    -4px -4px 12px rgba(255, 255, 255, 0.05);
+  border-radius: 38px;
+  position: static;
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 59px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 16px;
+}

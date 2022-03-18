@@ -1,0 +1,35 @@
+.main {
+  width: 400px;
+  color: #fff;
+  background: linear-gradient(180deg, #242424 0%, #282828 100%);
+  border-radius: 14px;
+}
+
+.main .main_btn {
+  padding: 15px 20px;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+.main .main_content {
+  height: 200px;
+  position: absolute;
+  overflow-y: scroll;
+  padding: 15px;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90.28deg, #292929 0%, #242424 100%), #ffffff;
+  border: 1px solid #2e2e2e;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.main_item > p {
+  opacity: 0.5;
+}
+.main .main_content .main_item {
+  padding: 10px;
+}

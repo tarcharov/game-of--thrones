@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container > img {
+  width: 437px;
+  height: 437px;
+  border-radius: 15px;
+}
+.container > p {
+  font-family: Inknut Antiqua;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 59px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container > p::nth-child(1) {
+  font-size: 30px;
+}
+
+.container > p::nth-child(2) {
+  font-size: 12px;
+}
