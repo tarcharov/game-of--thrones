@@ -1,143 +1,8 @@
-/*
-.main {
-  background-image: url("../../../assets/images/header_bg.png");
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.container {
-  position: relative;
-  min-height: 100%;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.white_walker {
-  min-height: 100%;
-  position: relative;
-  right: 0;
-  animation: huy 2s;
-}
-
-.daenerys {
-  min-height: 100%;
-  position: relative;
-  right: 0;
-  animation: huy2 2s;
-}
-
-.container > p {
-  font-style: normal;
-  font-weight: normal;
-  display: flex;
-  color: #ffffff;
-}
-
-.header_h1 {
-  width: 679px;
-  height: 20px;
-  left: 381px;
-  top: 65px;
-  position: relative;
-  width: 100%;
-  top: 30px;
-  animation: huy3 1s;
-  font-family: "Game of Thrones KG";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 20px;
-  color: #ffffff;
-  text-shadow: 2px 3px 23px #ffb800;
-  text-align: center;
-}
-
-h2 {
-  width: 538px;
-  height: 20px;
-  left: 452px;
-  top: 284px;
-  position: relative;
-  animation: huy4 4s;
-  font-family: "Game of Thrones KG";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 20px;
-  color: #00c2ff;
-  text-shadow: 2px 4px 17px rgba(255, 255, 255, 0.58);
-  text-align: center;
-}
-
-.container > p {
-  width: 738px;
-  height: 279px; 
-  position: relative;
-  animation: huy4 4s;
-  width: 50vw;
-  left: 351px;
-  top: 381px; 
-  font-family: Inknut Antiqua;
-  font-size: 30px;
-  line-height: 59px;
-  color: #ffffff;
-  text-align: center;
-}
-
-@keyframes huy {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes huy2 {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 0;
-  }
-}
-@keyframes huy3 {
-  0% {
-    top: -100px;
-  }
-  100% {
-    top: 30;
-  }
-}
-@keyframes huy4 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-  */
-
 .wrapper {
   background-image: url("../../../assets/images/header_bg.png");
-  width: 100%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -147,10 +12,8 @@ h2 {
   width: 100%;
   top: 70px;
   font-family: "Game of Thrones KG";
-  font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 20px;
   color: #ffffff;
   text-shadow: 2px 3px 23px #ffb800;
   text-align: center;
@@ -159,26 +22,18 @@ h2 {
 
 .container {
   width: 100%;
-  height: 400px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0 30px 0 30px;
   animation: article_animation 3.5s;
 }
 .article > h2 {
-  position: relative;
   font-family: "Game of Thrones KG";
-  font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 20px;
   color: #00c2ff;
   text-shadow: 2px 4px 17px rgba(255, 255, 255, 0.58);
   margin-bottom: 80px;
@@ -187,23 +42,18 @@ h2 {
 .article > p {
   font-family: Inknut Antiqua;
   font-size: 30px;
-  line-height: 59px;
   color: #ffffff;
   text-align: center;
 }
 
 .white_walker {
   position: relative;
-  width: 480px;
-  height: 816px;
   left: -15px;
   animation: walker_animation 2s;
 }
 
 .daenerys {
   position: relative;
-  width: 282px;
-  height: 805px;
   right: -20px;
   animation: daenerys_animation 2s;
 }
@@ -212,9 +62,7 @@ h2 {
   height: 300px;
   position: absolute;
   bottom: 0;
-  right: 0;
   background: linear-gradient(180deg, rgba(4, 4, 4, 0) 0%, #101010 100%);
-  z-index: 10;
 }
 @keyframes walker_animation {
   0% {

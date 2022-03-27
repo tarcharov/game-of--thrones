@@ -15,10 +15,6 @@
   height: 1px;
   background: linear-gradient(180deg, #242424 0%, #282828 100%);
 }
-.main > p {
-  text-align: center;
-  margin: 24px;
-}
 
 .main_content {
   display: flex;
@@ -70,25 +66,39 @@
   color: #fff;
 }
 
+.main_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px 0px 25px 0px;
+}
+
+.main_title > p {
+  width: 438px;
+  height: 24px;
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .close_btn {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-
-  position: relative;
+  margin-right: 16px;
+  position: absolute;
   background: linear-gradient(90.28deg, #292929 0%, #242424 100%);
   border: 1px solid #2e2e2e;
   box-sizing: border-box;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4),
     -4px -4px 12px rgba(255, 255, 255, 0.05);
   border-radius: 45px;
-}
-.main_title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
 }

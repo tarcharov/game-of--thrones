@@ -3,13 +3,7 @@ import { fetchData } from "../../utils/fetchData";
 import Card from "./components/Card";
 import styles from "./styles/characters.module.css";
 import ScrollContainer from "react-indiana-drag-scroll";
-const Characters = () => {
-  const [allCharacters, setAllCharacters] = useState([]);
-
-  useEffect(() => {
-    fetchData("Characters").then((result) => setAllCharacters(result));
-  }, []);
-
+const Characters = ({ setVisible, setSubmit, allCharacters }) => {
   return (
     <div className={styles.main}>
       <h1>Characters</h1>
@@ -17,8 +11,7 @@ const Characters = () => {
         {allCharacters.length > 0 ? (
           allCharacters.map((character) => (
             <Card
-              firstName={character.firstName}
-              lastName={character.lastName}
+              fullName={character.fullName}
               title={character.title}
               imageUrl={character.imageUrl}
             />
@@ -27,7 +20,14 @@ const Characters = () => {
           <p>Персонажей нет</p>
         )}
       </ScrollContainer>
-      <button>JOIN TO BATTLE</button>
+      <button
+        onClick={() => {
+          setVisible(true);
+          setSubmit(true);
+        }}
+      >
+        JOIN TO BATTLE
+      </button>
     </div>
   );
 };
