@@ -9,6 +9,7 @@
   line-height: 24px;
   color: #ffffff;
   height: 100%;
+  background: #1c1c1c;
 }
 .line {
   width: 100%;
@@ -104,6 +105,12 @@
 }
 
 .error {
-  position: relative;
+  position: absolute;
   color: red;
+  top: -28px;
+}
+
+.input_wrap {
+  position: relative;
+  height: 100%;
 }

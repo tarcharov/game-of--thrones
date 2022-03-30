@@ -27,3 +27,11 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

@@ -56,31 +56,36 @@ const Form = ({
       </div>
       <div className={styles.line}></div>
       <div className={styles.main_content}>
-        {emailDirty && emailError && (
-          <div className={styles.error}>{emailError}</div>
-        )}
-        <input
-          name="email"
-          type="text"
-          className={styles.txt_input}
-          placeholder="Enter your E-mail address"
-          onBlur={(e) => blurHandler(e)}
-          onChange={(e) => emailHandler(e)}
-          value={email}
-        ></input>
-        {characterDirty && characterError && (
-          <div className={styles.error}>{characterError}</div>
-        )}
-        <DropList
-          selected={selected}
-          setSelected={setSelected}
-          allCharacters={allCharacters}
-          isActive={isActive}
-          setIsActive={setIsActive}
-          characterDirty={characterDirty}
-          setCharacterDirty={setCharacterDirty}
-          setCharacterError={setCharacterError}
-        />
+        <div className={styles.input_wrap}>
+          {emailDirty && emailError && (
+            <div className={styles.error}>{emailError}</div>
+          )}
+          <input
+            name="email"
+            type="text"
+            className={styles.txt_input}
+            placeholder="Enter your E-mail address"
+            onBlur={(e) => blurHandler(e)}
+            onChange={(e) => emailHandler(e)}
+            value={email}
+          ></input>
+        </div>
+        <div className={styles.input_wrap}>
+          {characterDirty && characterError && (
+            <div className={styles.error}>{characterError}</div>
+          )}
+          <DropList
+            selected={selected}
+            setSelected={setSelected}
+            allCharacters={allCharacters}
+            isActive={isActive}
+            setIsActive={setIsActive}
+            characterDirty={characterDirty}
+            setCharacterDirty={setCharacterDirty}
+            setCharacterError={setCharacterError}
+          />
+        </div>
+
         <button
           className={styles.sub_btn}
           onClick={onClickSubmit}
