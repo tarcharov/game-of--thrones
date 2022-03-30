@@ -7,7 +7,11 @@ const Header = () => {
       <h1>GAME OF THRONES PUBLIC HUB</h1>
 
       <div className={styles.container}>
-        <img src={white_walker} className={styles.white_walker} />
+        <img
+          src={white_walker}
+          className={styles.white_walker}
+          alt="white_walkerImg"
+        />
         <div className={styles.article}>
           <h2>BATTLE OF THE VESTEROS</h2>
           <p>
@@ -16,7 +20,7 @@ const Header = () => {
             take part in a life-and-death battle
           </p>
         </div>
-        <img src={daenerys} className={styles.daenerys} />
+        <img src={daenerys} className={styles.daenerys} alt="daenerysImg" />
       </div>
       <div className={styles.gradient_block}></div>
     </div>

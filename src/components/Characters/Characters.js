@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { fetchData } from "../../utils/fetchData";
+import React from "react";
 import Card from "./components/Card";
 import styles from "./styles/characters.module.css";
 import ScrollContainer from "react-indiana-drag-scroll";
@@ -22,8 +21,8 @@ const Characters = ({ setVisible, setSubmit, allCharacters }) => {
       </ScrollContainer>
       <button
         onClick={() => {
+          setSubmit(false);
           setVisible(true);
-          setSubmit(true);
         }}
       >
         JOIN TO BATTLE

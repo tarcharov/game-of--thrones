@@ -15,6 +15,10 @@ const ModalWindow = ({
   const [email, setEmail] = useState("");
   const [selected, setSelected] = useState("");
   const [submitImgUrl, setSubmitImgUrl] = useState();
+
+  const [emailDirty, setEmailDirty] = useState(false);
+  const [characterDirty, setCharacterDirty] = useState(false);
+
   if (visible) {
     rootClasses.push(styles.activ);
   }
@@ -23,16 +27,22 @@ const ModalWindow = ({
     setEmail("");
     setSelected("");
     setVisible(false);
-    setSubmit(true);
-    console.log(submit);
+    setSubmit(false);
+    setEmailDirty(false);
+    setCharacterDirty(false);
+    console.log("loh");
   };
   return (
-    <div className={rootClasses.join(" ")} onClick={onCloseModal}>
-      <div
-        className={styles.modalWindowContent}
-        onClick={(e) => e.stopPropagation()}
-      >
+    <div className={rootClasses.join(" ")}>
+      <div className={styles.modalWindowContent}>
         {submit ? (
+          <OnSubmitForm
+            onCloseModal={onCloseModal}
+            allCharacters={allCharacters}
+            selected={selected}
+            submitImgUrl={submitImgUrl}
+          />
+        ) : (
           <Form
             setSubmit={setSubmit}
             onCloseModal={onCloseModal}
@@ -42,12 +52,10 @@ const ModalWindow = ({
             setSelected={setSelected}
             allCharacters={allCharacters}
             setSubmitImgUrl={setSubmitImgUrl}
-          />
-        ) : (
-          <OnSubmitForm
-            allCharacters={allCharacters}
-            selected={selected}
-            submitImgUrl={submitImgUrl}
+            emailDirty={emailDirty}
+            setEmailDirty={setEmailDirty}
+            characterDirty={characterDirty}
+            setCharacterDirty={setCharacterDirty}
           />
         )}
       </div>
