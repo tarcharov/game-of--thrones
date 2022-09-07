@@ -22,7 +22,7 @@ function App() {
         submit={submit}
         setSubmit={setSubmit}
         allCharacters={allCharacters}
-      ></ModalWindow>
+      />
       <Header />
       <Places />
       <Characters

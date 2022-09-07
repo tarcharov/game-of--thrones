@@ -22,7 +22,7 @@ const Form = ({
   const [characterError, setCharacterError] = useState("Выбери персонажа");
   const onClickSubmit = () => {
     setSubmitImgUrl(
-      allCharacters.filter((character) => character.fullName === selected)[0]
+      allCharacters.find((character) => character.fullName === selected)
         .imageUrl
     );
     setSubmit(true);

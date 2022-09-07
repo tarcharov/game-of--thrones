@@ -30,7 +30,6 @@ const ModalWindow = ({
     setSubmit(false);
     setEmailDirty(false);
     setCharacterDirty(false);
-    console.log("loh");
   };
   return (
     <div className={rootClasses.join(" ")}>

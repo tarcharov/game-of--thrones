@@ -68,14 +68,13 @@ const DropList = ({
         <div className={styles.main_content} id="content">
           {allCharacters.length > 0 ? (
             filter(allCharacters).map((character) => (
-              <div className={styles.main_item}>
-                <p
-                  onClick={(e) => {
-                    setSelected(e.target.textContent);
-                    setIsActive(false);
-                    setCharacterError("");
-                  }}
-                >
+              <div className={styles.main_item}
+              onClick={(e) => {
+                setSelected(e.target.textContent);
+                setIsActive(false);
+                setCharacterError("");
+              }}>
+                <p>
                   {character.fullName}
                 </p>
               </div>
